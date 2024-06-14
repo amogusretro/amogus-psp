@@ -9,7 +9,7 @@ How to build it?
 
 To build the project, you need to have Rust installed.
 
-Take caution: You must have Rust(nightly toolchain) version <= 2024-05-03 else it eill makes errors
+Take caution: You must have Rust(nightly toolchain) version <= 2024-05-03 else it will makes errors
 
 Then install cargo-psp (Here you need to install the latest version of the nightly toolchain). Now you can run
 
