@@ -26,5 +26,6 @@ jobs:
           
     - name: Build
       run: |
+        cargo default nightly
         cargo install cargo-psp
-        cargo psp
+        rustup run nightly-2023-03-05 cargo psp
