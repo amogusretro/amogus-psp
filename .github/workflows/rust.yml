@@ -29,4 +29,4 @@ jobs:
       run: |
         rustup default nightly
         cargo install cargo-psp
-        rustup run nightly-2024-03-05 cargo psp
+        cargo +nightly-2024-03-05 psp --verbose
