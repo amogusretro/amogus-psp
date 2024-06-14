@@ -5,6 +5,7 @@ on:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
+  workflow_dispatch:
 
 env:
   CARGO_TERM_COLOR: always
@@ -26,6 +27,6 @@ jobs:
           
     - name: Build
       run: |
-        cargo default nightly
+        rustup default nightly
         cargo install cargo-psp
         rustup run nightly-2023-03-05 cargo psp
