@@ -26,7 +26,7 @@ jobs:
         allow-downgrade: true  
         targets: x86_64-pc-windows-msvc
     - name: Add nightly tc
-      uses: brndmnmtthws/rust-action-rustup@v1.0.0
+      uses: brndnmtthws/rust-action-rustup@v1.0.0
       with:
         toolchain: 'nightly'
     - name: Install cargo-make
