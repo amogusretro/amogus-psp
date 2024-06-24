@@ -1,0 +1,4 @@
+[tasks.psp]
+command = "cargo"
+toolchain = "nightly-2024-03-05"
+args = ["psp"]
