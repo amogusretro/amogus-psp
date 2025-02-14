@@ -9,7 +9,6 @@ on:
 
 env:
   CARGO_TERM_COLOR: always
-  CARGO_MAKE_RUN_CODECOV: true
 
 jobs:
   build:
@@ -29,11 +28,6 @@ jobs:
       uses: brndnmtthws/rust-action-rustup@v1.0.0
       with:
         toolchain: 'nightly'
-    - name: Install cargo-make
-      uses: actions-rs/cargo@v1
-      with:
-        command: install
-        args: --debug cargo-make
     - name: Install Cargo PSP
       uses: actions-rs/cargo@v1
       with:
