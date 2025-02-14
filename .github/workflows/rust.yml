@@ -43,6 +43,7 @@ jobs:
     - name: Run CI
       uses: actions-rs/cargo@v1
       with:
-        command: make psp
+        toolchain: 'nightly-2024-03-05'
+        command: psp
         args: --no-workspace workspace-ci-flow
     
