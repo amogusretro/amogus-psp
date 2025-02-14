@@ -16,14 +16,8 @@ jobs:
     runs-on: windows-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Install Rustup with the given info
-      uses: brndnmtthws/rust-action-rustup@v1.0.0
-      with:  
-        toolchain: 'nightly-2024-03-05'
-        components: rust-src
-        allow-downgrade: true  
-        targets: x86_64-pc-windows-msvc
+    - name: Checkout code
+      uses: actions/checkout@v4
     - name: Add nightly tc
       uses: brndnmtthws/rust-action-rustup@v1.0.0
       with:
@@ -37,7 +31,7 @@ jobs:
     - name: Run CI
       uses: actions-rs/cargo@v1
       with:
-        toolchain: 'nightly-2024-03-05'
+        toolchain: nightly
         command: psp
         args: --no-workspace workspace-ci-flow
     
